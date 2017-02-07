@@ -1,8 +1,8 @@
-(ns hashobject.boot-s3.core
+(ns adstage.boot-s3.core
   (:require [boot.core :as boot]
-            [hashobject.boot-s3.fs :as fs]
-            [hashobject.boot-s3.s3 :as s3]
-            [hashobject.boot-s3.merge :as m]))
+            [adstage.boot-s3.fs :as fs]
+            [adstage.boot-s3.s3 :as s3]
+            [adstage.boot-s3.merge :as m]))
 
 (declare capture-file-details)
 (declare calculate-deltas)
@@ -64,7 +64,7 @@
         (let [{:keys [path tmp-file]} (first deltas)
               {:keys [metadata permissions]} (merge-with merge
                                                          options
-                                                         (:hashobject/boot-s3 tmp-file))]
+                                                         (:adstage/boot-s3 tmp-file))]
           (print "  " path "uploading ...")
 
           (s3/put-file

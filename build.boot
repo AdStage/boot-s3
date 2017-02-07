@@ -8,18 +8,18 @@
 
 (require '[adzerk.bootlaces :refer :all])
 
-(def +version+ "0.1.2-SNAPSHOT")
+(def +version+ "0.1.2")
 (bootlaces! +version+)
 
 (task-options!
   push {
     :ensure-clean false
   }
-  pom {:project 'hashobject/boot-s3
+  pom {:project 'adstage/boot-s3
        :version +version+
        :description "Boot task for syncing local directory with AWS S3 bucket"
-       :url         "https://github.com/hashobject/boot-s3"
-       :scm         {:url "https://github.com/hashobject/boot-s3"}
+       :url         "https://github.com/adstage/boot-s3"
+       :scm         {:url "https://github.com/adstage/boot-s3"}
        :license     {"name" "Eclipse Public License"
                      "url"  "http://www.eclipse.org/legal/epl-v10.html"}})
 
