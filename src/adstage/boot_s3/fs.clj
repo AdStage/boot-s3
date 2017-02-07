@@ -1,4 +1,4 @@
-(ns hashobject.boot-s3.fs
+(ns adstage.boot-s3.fs
   (:require [boot.core :as boot]
             [pandect.core :as p])
   (:import [java.io File]

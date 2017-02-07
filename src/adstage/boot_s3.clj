@@ -1,8 +1,8 @@
-(ns hashobject.boot-s3
+(ns adstage.boot-s3
   {:boot/export-tasks true}
   (:require [boot.core               :as boot]
             [boot.util               :as u]
-            [hashobject.boot-s3.core :as s3]))
+            [adstage.boot-s3.core :as s3]))
 
 
 (def ^:private

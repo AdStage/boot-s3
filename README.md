@@ -1,7 +1,7 @@
 # boot-s3
 
-[![Dependencies Status](https://jarkeeper.com/hashobject/boot-s3/status.svg)](https://jarkeeper.com/hashobject/boot-s3)
-[![Downloads](https://jarkeeper.com/hashobject/boot-s3/downloads.svg)](https://jarkeeper.com/hashobject/boot-s3)
+[![Dependencies Status](https://jarkeeper.com/adstage/boot-s3/status.svg)](https://jarkeeper.com/adstage/boot-s3)
+[![Downloads](https://jarkeeper.com/adstage/boot-s3/downloads.svg)](https://jarkeeper.com/adstage/boot-s3)
 
 [Boot](http://boot-clj.com/) task to sync local directory with AWS S3.
 Most of the code borrowed from [lein-s3-sync](https://github.com/kanej/lein-s3-sync).
@@ -10,14 +10,14 @@ This task works in the efficient way and uploads only new or changed files to th
 ## Install
 
 ```
-[hashobject/boot-s3 "0.1.2-SNAPSHOT"]
+[adstage/boot-s3 "0.1.2"]
 ```
 
 ## Usage
 
 Add library
 ```
-(require '[hashobject.boot-s3 :refer :all])
+(require '[adstage.boot-s3 :refer :all])
 ```
 and use it:
 
@@ -43,6 +43,6 @@ We love contributions. Please submit your pull requests.
 
 ## License
 
-Copyright © 2013-2017 Hashobject Ltd (team@hashobject.com).
+Copyright © 2013-2017 Adstage Ltd (eng@adstage.io).
 
 Distributed under the [Eclipse Public License](http://opensource.org/licenses/eclipse-1.0).
