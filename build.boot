@@ -12,7 +12,6 @@
 (bootlaces! +version+)
 
 (task-options!
- push {:ensure-clean false}
  pom {:project      'adstage/boot-s3
       :version      +version+
       :repositories [["clojars"  {:url           "https://clojars.org/repo"
@@ -23,12 +22,6 @@
       :scm          {:url "https://github.com/adstage/boot-s3"}
       :license      {"name" "Eclipse Public License"
                      "url"  "http://www.eclipse.org/legal/epl-v10.html"}})
-
-
-(deftask release-snapshot
-  "Release snapshot"
-  []
-  (comp (build-jar) (push-snapshot)))
 
 (deftask dev
   "Dev process"
