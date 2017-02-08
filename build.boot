@@ -24,6 +24,11 @@
       :license      {"name" "Eclipse Public License"
                      "url"  "http://www.eclipse.org/legal/epl-v10.html"}})
 
+(deftask release-snapshot
+  "Release snapshot"
+  []
+  (comp (build-jar) (push-snapshot)))
+
 (deftask dev
   "Dev process"
   []
