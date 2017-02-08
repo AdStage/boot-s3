@@ -9,8 +9,14 @@ This task works in the efficient way and uploads only new or changed files to th
 
 ## Install
 
+For stable release, try:
 ```
 [io.adstage/boot-s3 "0.1.2"]
+```
+
+For latest changes, try:
+```
+[io.adstage/boot-s3 "0.1.3-SNAPSHOT"]
 ```
 
 ## Usage

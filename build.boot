@@ -8,16 +8,12 @@
 
 (require '[adzerk.bootlaces :refer :all])
 
-(def +version+ "0.1.2")
+(def +version+ "0.1.3-SNAPSHOT")
 (bootlaces! +version+)
 
 (task-options!
- push {:gpg-sign false}
  pom {:project      'io.adstage/boot-s3
       :version      +version+
-      :repositories [["clojars"  {:url           "https://clojars.org/repo"
-                                  :creds         :gpg
-                                  :sign-releases false}]]
       :description  "Boot task for syncing local directory with AWS S3 bucket"
       :url          "https://github.com/adstage/boot-s3"
       :scm          {:url "https://github.com/adstage/boot-s3"}
