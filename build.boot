@@ -12,6 +12,7 @@
 (bootlaces! +version+)
 
 (task-options!
+ push {:gpg-sign false}
  pom {:project      'adstage/boot-s3
       :version      +version+
       :repositories [["clojars"  {:url           "https://clojars.org/repo"
