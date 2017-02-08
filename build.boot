@@ -12,17 +12,17 @@
 (bootlaces! +version+)
 
 (task-options!
-  push {
-    :ensure-clean false
-  }
-  pom {:project 'adstage/boot-s3
-       :version +version+
-       :description "Boot task for syncing local directory with AWS S3 bucket"
-       :url         "https://github.com/adstage/boot-s3"
-       :scm         {:url "https://github.com/adstage/boot-s3"}
-       :license     {"name" "Eclipse Public License"
+ push {:gpg-sign false}
+ pom {:project      'adstage/boot-s3
+      :version      +version+
+      :repositories [["clojars"  {:url           "https://clojars.org/repo"
+                                  :creds         :gpg
+                                  :sign-releases false}]]
+      :description  "Boot task for syncing local directory with AWS S3 bucket"
+      :url          "https://github.com/adstage/boot-s3"
+      :scm          {:url "https://github.com/adstage/boot-s3"}
+      :license      {"name" "Eclipse Public License"
                      "url"  "http://www.eclipse.org/legal/epl-v10.html"}})
-
 
 (deftask release-snapshot
   "Release snapshot"
